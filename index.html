@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Beauty by Hiba - beauty services, brows, makeup, skincare, and appointments.">
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Beauty by Hiba - beauty services, brows, makeup, skincare, and appointments."
+  />
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
   <title>Beauty by Hiba</title>
   <style>
     :root {
@@ -16,11 +19,9 @@
       --paper: #fff7fb;
       --line: rgba(35, 25, 35, 0.14);
     }
-
     * {
       box-sizing: border-box;
     }
-
     body {
       min-width: 320px;
       margin: 0;
@@ -30,11 +31,9 @@
         linear-gradient(135deg, #fff1f7, #efe8fb);
       font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
-
     a {
       color: inherit;
     }
-
     .page {
       width: min(100%, 1120px);
       min-height: 100vh;
@@ -43,25 +42,21 @@
       margin: 0 auto;
       padding: 22px;
     }
-
     header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 16px;
     }
-
     .brand {
       font-size: 22px;
       font-weight: 900;
     }
-
     nav {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
     }
-
     nav a,
     .button {
       min-height: 42px;
@@ -73,16 +68,13 @@
       text-decoration: none;
       font-weight: 840;
     }
-
     nav a {
       background: rgba(255, 255, 255, 0.7);
     }
-
     .button {
       color: #fff;
       background: var(--rose);
     }
-
     .hero {
       min-height: 560px;
       display: grid;
@@ -95,35 +87,29 @@
       background: rgba(255, 255, 255, 0.9);
       box-shadow: 0 20px 52px rgba(35, 25, 35, 0.16);
     }
-
     .eyebrow {
       margin: 0 0 6px;
       color: var(--rose);
       font-size: 13px;
       font-weight: 900;
-      letter-spacing: 0;
       text-transform: uppercase;
     }
-
     h1,
     h2,
     p {
       margin-top: 0;
     }
-
     h1 {
       margin-bottom: 12px;
       font-size: clamp(42px, 7vw, 78px);
       line-height: 0.95;
     }
-
     .hero p,
     .service p,
     .booking p {
       color: var(--muted);
       line-height: 1.55;
     }
-
     .hero-art {
       min-height: 420px;
       position: relative;
@@ -131,9 +117,9 @@
       border-radius: 8px;
       background:
         linear-gradient(135deg, rgba(96, 50, 93, 0.16), rgba(182, 66, 114, 0.28)),
-        url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1100&q=80") center / cover;
+        url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1100&q=80")
+          center / cover;
     }
-
     .hero-art::after {
       content: "Brows Makeup Skin";
       position: absolute;
@@ -147,13 +133,11 @@
       font-size: 24px;
       font-weight: 900;
     }
-
     .services {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 14px;
     }
-
     .service,
     .booking {
       border: 1px solid var(--line);
@@ -161,61 +145,50 @@
       padding: 18px;
       background: rgba(255, 255, 255, 0.88);
     }
-
     .service span {
       color: var(--gold);
       font-size: 28px;
       font-weight: 900;
     }
-
     .service h2,
     .booking h2 {
       margin-bottom: 8px;
       font-size: 26px;
     }
-
     .booking {
       display: grid;
       grid-template-columns: minmax(0, 1fr) auto;
       gap: 14px;
       align-items: center;
     }
-
     footer {
       color: var(--muted);
       text-align: center;
     }
-
     @media (max-width: 760px) {
       .page {
         padding: 14px;
       }
-
       header,
       .hero,
       .services,
       .booking {
         grid-template-columns: 1fr;
       }
-
       header {
         display: grid;
       }
-
       nav {
         display: grid;
         grid-template-columns: 1fr 1fr;
       }
-
       .hero {
         min-height: 0;
         padding: 18px;
       }
-
       .hero-art {
         min-height: 320px;
       }
-
       .booking .button {
         width: 100%;
       }
@@ -228,7 +201,8 @@
       <div class="brand">Beauty by Hiba</div>
       <nav aria-label="Primary navigation">
         <a href="#services">Services</a>
-        <a href="#booking">Book</a>
+        <a href="./book.html">Book</a>
+        <a href="./portal.html">My Bookings</a>
       </nav>
     </header>
 
@@ -238,10 +212,10 @@
           <p class="eyebrow">Beauty studio</p>
           <h1 id="title">Beauty by Hiba</h1>
           <p>
-            Polished beauty services for brows, makeup, and skincare with a calm appointment flow
-            and a style built for real clients on mobile.
+            Polished beauty services for brows, makeup, and skincare with a calm
+            appointment flow and a style built for real clients on mobile.
           </p>
-          <a class="button" href="mailto:nnabdelshahid@gmail.com?subject=Beauty%20Appointment">Request appointment</a>
+          <a class="button" href="./book.html">Book appointment</a>
         </div>
         <div class="hero-art" aria-label="Beauty products and makeup arrangement"></div>
       </section>
@@ -255,7 +229,7 @@
         <article class="service">
           <span>02</span>
           <h2>Makeup</h2>
-          <p>Natural, event, and photo-ready looks tailored to the appointment.</p>
+          <p>Natural, event, and photo‑ready looks tailored to the appointment.</p>
         </article>
         <article class="service">
           <span>03</span>
@@ -267,9 +241,9 @@
       <section class="booking" id="booking">
         <div>
           <h2>Ready to book?</h2>
-          <p>Send the date, service, and preferred time. The message opens in your email app.</p>
+          <p>Send the date, service, and preferred time. Click below to start the booking flow.</p>
         </div>
-        <a class="button" href="mailto:nnabdelshahid@gmail.com?subject=Beauty%20Appointment">Email booking</a>
+        <a class="button" href="./book.html">Book now</a>
       </section>
     </main>
 

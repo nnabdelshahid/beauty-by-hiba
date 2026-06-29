@@ -1,7 +1,12 @@
 [build]
   publish = "."
-  
+
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/portal"
+  to = "/portal.html"
+  status = 200
+
+[[redirects]]
+  from = "/book"
+  to = "/book.html"
   status = 200
